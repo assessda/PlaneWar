@@ -1,0 +1,10 @@
+1、Qt项目中添加资源文件 生成qrc文件
+2、在qrc文件目录使用命令  “rcc -binary .\文件名.qrc -o 生成名字.rcc”
+
+
+
+在main.cpp中添加
+头文件#include<QResource>
+
+main函数中:
+QResource::registerResource("./xxxx.rcc");
